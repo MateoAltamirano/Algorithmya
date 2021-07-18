@@ -1,0 +1,27 @@
+.item {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.indicator {
+  min-width: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.item:hover > .indicator {
+  background-color: whitesmoke;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: whitesmoke;
+  font-size: large;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

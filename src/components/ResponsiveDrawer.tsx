@@ -1,14 +1,13 @@
-import {
-  Drawer,
-  Hidden,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  useTheme,
-} from '@material-ui/core';
-import { Inbox, Mail } from '@material-ui/icons';
-import { useStyles } from './styles/theme';
+import { Drawer, Hidden, List, useTheme } from '@material-ui/core';
+import DrawerItem from './DrawerItem';
+import { useStyles } from '../styles/theme';
+import '../styles/Drawer.css';
+
+const DRAWER_ITEMS = [
+  { label: 'Array', route: 'array' },
+  { label: 'Stack', route: 'stack' },
+  { label: 'Queue', route: 'queue' },
+];
 
 type ResponsiveDrawerProps = {
   mobileOpen: boolean;
@@ -26,13 +25,8 @@ const ResponsiveDrawer = ({
     <>
       <div className={classes.toolbar} />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <Inbox /> : <Mail />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
+        {DRAWER_ITEMS.map((item, index) => (
+          <DrawerItem key={index} label={item.label} route={item.route} />
         ))}
       </List>
     </>
