@@ -6,6 +6,7 @@ import {
 } from '@material-ui/core/styles';
 
 const DRAWER_WIDTH = 240;
+const APP_BAR_HEIGHT = 64;
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -40,8 +41,15 @@ export const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: theme.palette.secondary.dark,
     },
     content: {
+      display: 'flex',
       minHeight: '100%',
-      padding: theme.spacing(3),
+      minWidth: `calc(100% - ${DRAWER_WIDTH}px)`,
+      [theme.breakpoints.down('sm')]: {
+        minWidth: '100%',
+      },
+      marginTop: `${APP_BAR_HEIGHT}px`,
+      padding: theme.spacing(2),
+      backgroundColor: 'whitesmoke',
     },
   })
 );

@@ -1,7 +1,7 @@
 import { Drawer, Hidden, List, useTheme } from '@material-ui/core';
-import DrawerItem from './DrawerItem';
-import { useStyles } from '../styles/theme';
 import '../styles/Drawer.css';
+import { useStyles } from '../styles/theme';
+import DrawerItem from './DrawerItem';
 
 const DRAWER_ITEMS = [
   { label: 'Array', route: 'array' },
@@ -25,8 +25,13 @@ const ResponsiveDrawer = ({
     <>
       <div className={classes.toolbar} />
       <List>
-        {DRAWER_ITEMS.map((item, index) => (
-          <DrawerItem key={index} label={item.label} route={item.route} />
+        {DRAWER_ITEMS.map((item, idx) => (
+          <DrawerItem
+            key={idx}
+            label={item.label}
+            route={item.route}
+            idx={idx}
+          />
         ))}
       </List>
     </>
