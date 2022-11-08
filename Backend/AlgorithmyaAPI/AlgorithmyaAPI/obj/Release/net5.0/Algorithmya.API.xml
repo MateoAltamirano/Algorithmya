@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Algorithmya.API</name>
+    </assembly>
+    <members>
+        <member name="M:AlgorithmyaAPI.Controllers.AuthController.Authentication(Algorithmya.Core.DTOs.SignInDTO)">
+            <summary>
+            Authenticates a user
+            </summary>
+            <param name="signInDTO"></param>
+            <returns>A JWT token</returns>
+            <response code="200">Returns a success message</response>
+            <response code="400">If the sign in parameters are not valid</response>
+        </member>
+        <member name="M:AlgorithmyaAPI.Controllers.UserController.GetUser(System.String)">
+            <summary>
+            Gets a specific user
+            </summary>
+            <param name="email"></param>
+            <returns>The user with the specified email</returns>
+            <response code="200">Returns the user with the specified email</response>
+            <response code="401">If the user is not authenticated</response>
+            <response code="404">If the user is not found</response>
+        </member>
+        <member name="M:AlgorithmyaAPI.Controllers.UserController.CreateUser(Algorithmya.Core.DTOs.SignUpDTO)">
+            <summary>
+            Creates a user
+            </summary>
+            <param name="signUpDTO"></param>
+            <returns>A newly created user</returns>
+            <response code="201">Returns the newly created user</response>
+            <response code="400">If the sign up parameters are not valid</response>
+            <response code="409">If the user has been already created</response>
+            <response code="500">If the request failed to create a new user</response>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,12 @@
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\bin\Release\net5.0\Algorithmya.Core.deps.json
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\bin\Release\net5.0\Algorithmya.Core.dll
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\bin\Release\net5.0\ref\Algorithmya.Core.dll
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\bin\Release\net5.0\Algorithmya.Core.pdb
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\obj\Release\net5.0\Algorithmya.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\obj\Release\net5.0\Algorithmya.Core.AssemblyInfoInputs.cache
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\obj\Release\net5.0\Algorithmya.Core.AssemblyInfo.cs
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\obj\Release\net5.0\Algorithmya.Core.csproj.CoreCompileInputs.cache
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\obj\Release\net5.0\Algorithmya.Core.dll
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\obj\Release\net5.0\ref\Algorithmya.Core.dll
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\obj\Release\net5.0\Algorithmya.Core.pdb
+C:\Users\mateo\Documents\Jalasoft\AlgorithmyaProject\Backend\AlgorithmyaAPI\Algorithmya.Core\obj\Release\net5.0\Algorithmya.Core.csproj.AssemblyReference.cache

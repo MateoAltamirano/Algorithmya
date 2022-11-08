@@ -1,0 +1,28 @@
+.hash-table-key {
+  border-radius: 10px;
+  background-color: var(--color-secondary);
+  border: 5px solid var(--color-primary);
+  transition: ease-in-out 0.25s;
+}
+
+.hash-table-key:hover {
+  transform: scale(1.1) translateX(1rem);
+  margin-right: 1.2rem;
+}
+
+.hash-table-value {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--color-primary);
+  border: 5px solid var(--color-primary-light);
+  border-left: none;
+}
+
+.hash-table-idx {
+  width: 2rem;
+  height: 4rem;
+  background-color: var(--color-secondary);
+  border: 5px solid var(--color-primary-light);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}

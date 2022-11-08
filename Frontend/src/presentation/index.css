@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Lorin';
+  src: url('../application/assets/fonts/Lorin/Lorin-Regular.woff2')
+      format('woff2'),
+    url('../application/assets/fonts/Lorin/Lorin-Regular.woff') format('woff'),
+    url('../application/assets/fonts/Lorin/Lorin-Regular.ttf')
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lorin';
+  src: url('../application/assets/fonts/Lorin/Lorin-Light.woff2')
+      format('woff2'),
+    url('../application/assets/fonts/Lorin/Lorin-Light.woff') format('woff'),
+    url('../application/assets/fonts/Lorin/Lorin-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lorin';
+  src: url('../application/assets/fonts/Lorin/Lorin-Bold.woff2') format('woff2'),
+    url('../application/assets/fonts/Lorin/Lorin-Bold.woff') format('woff'),
+    url('../application/assets/fonts/Lorin/Lorin-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  --actions-module-width: 270px;
+  --color-primary: hsl(174, 63%, 40%);
+  --color-primary-light: hsl(88, 50%, 76%);
+  --color-primary-accent: hsl(35, 80%, 70%);
+  --color-secondary: hsl(221, 24%, 26%);
+  --color-secondary-dark: hsl(216, 26%, 19%);
+  --color-red: hsl(0, 91%, 78%);
+  --color-orange: hsl(35, 100%, 70%);
+  --color-yellow: hsl(45, 92%, 75%);
+  --color-green: hsl(98, 44%, 75%);
+  --color-blue: hsl(196, 87%, 71%);
+  --color-purple: hsl(258, 31%, 69%);
+  --color-brown: hsl(24, 14%, 64%);
+  --color-pink: hsl(343, 84%, 75%);
+}
+
+.ds {
+  display: grid;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  overflow: auto;
+}
+
+.ds-horizontal {
+  grid-auto-flow: column;
+}
+
+.ds-vertical {
+  grid-auto-flow: row;
+  max-height: 100%;
+}
+
+.ds-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ds-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+  color: white;
+  user-select: none;
+}
+
+.simple {
+  background-color: var(--color-primary);
+  border: 5px solid var(--color-primary-light);
+  border-radius: 10px;
+  transition: ease-in-out 0.25s;
+}
+
+.empty-ds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-ds-search {
+  transform: translateY(-5rem);
+}
+
+.empty-ds-label {
+  user-select: none;
+  transform: translateY(-4rem);
+  color: gray;
+}
+
+.appear {
+  animation: appear 0.8s ease;
+}
+
+.select {
+  animation: select 0.8s ease;
+}
+
+.text-appear {
+  animation: text-appear 0.8s ease;
+}
+
+@keyframes appear {
+  0% {
+    background-color: var(--color-primary-light);
+    fill: var(--color-primary-light);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  85% {
+    transform: scale(0.85);
+  }
+  100% {
+    background-color: var(--color-primary-light);
+    fill: var(--color-primary-light);
+  }
+}
+
+@keyframes select {
+  0% {
+    background-color: var(--color-primary-light);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: var(--color-primary-light);
+  }
+}
+
+@keyframes text-appear {
+  50% {
+    transform: scale(1.1);
+  }
+  85% {
+    transform: scale(0.85);
+  }
+}

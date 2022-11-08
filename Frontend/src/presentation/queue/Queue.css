@@ -1,0 +1,4 @@
+.queue-value:hover {
+  transform: scale(1.1) translateY(-1rem);
+  margin-top: 1rem;
+}

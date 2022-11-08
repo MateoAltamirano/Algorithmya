@@ -1,0 +1,4 @@
+.stack-value:hover {
+  transform: scale(1.1) translateX(1rem);
+  margin-right: 1rem;
+}

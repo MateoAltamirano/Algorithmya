@@ -1,0 +1,51 @@
+.graph {
+  display: grid;
+  align-items: center;
+}
+
+.graph {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.graph-svg {
+  height: 150rem;
+  width: 150rem;
+}
+
+.node-value {
+  width: 4rem;
+  height: 4rem;
+  fill: var(--color-primary);
+  stroke-width: 5px;
+  stroke: var(--color-primary-light);
+  transition: ease-in-out 0.25s;
+}
+
+.node-value:hover {
+  transform: scale(1.1);
+}
+
+.node-label {
+  pointer-events: none;
+  user-select: none;
+  text-anchor: middle;
+  fill: white;
+  transition: ease-in-out 0.25s;
+}
+
+.node-value:hover + .node-label {
+  transform: scale(1.1);
+}
+
+.edge {
+  stroke-width: 4px;
+  stroke: var(--color-secondary);
+}
+
+.loop-edge {
+  fill: transparent;
+  stroke-width: 4px;
+  stroke: var(--color-secondary);
+}

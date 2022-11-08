@@ -1,0 +1,12 @@
+.text-input {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 4px 0;
+  align-items: center;
+  padding: 4px;
+  width: 100%;
+  min-height: 40px;
+}

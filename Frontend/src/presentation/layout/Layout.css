@@ -1,0 +1,103 @@
+.content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modules {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  overflow: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.actions-module {
+  display: flex;
+  width: var(--actions-module-width);
+  max-width: var(--actions-module-width);
+  height: 100%;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.data-structure-module {
+  display: flex;
+  width: calc(100% - var(--actions-module-width));
+  max-width: calc(100% - var(--actions-module-width));
+  height: 100%;
+  overflow: auto;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .actions-module {
+    width: 100%;
+    min-width: 100%;
+    height: min-content;
+  }
+  .data-structure-module {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.methods {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  background-color: white;
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-image: url('../../application/assets/AlgorithmyaBackground.png');
+  background-size: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  overflow: auto;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--color-secondary);
+  padding: 5rem;
+}
+
+.form-btn {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+@media screen and (max-width: 786px) {
+  .form {
+    width: 100%;
+    border-radius: 5px;
+    padding: 3rem;
+  }
+}

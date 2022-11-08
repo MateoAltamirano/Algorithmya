@@ -1,0 +1,58 @@
+.item {
+  display: flex;
+  height: 60px;
+  margin-right: 5px;
+}
+
+.indicator {
+  min-width: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: ease 0.5s;
+  margin: 1px 0;
+}
+
+.item:hover {
+  background-color: whitesmoke;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 0.6rem 0 rgba(18, 18, 18, 0.8);
+}
+
+.item:hover .icon svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: #121212;
+  stroke: #121212;
+}
+
+.item:hover .label {
+  color: #121212;
+}
+
+.item:hover .indicator {
+  color: #121212;
+}
+
+.label {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: whitesmoke;
+  overflow: hidden;
+  margin-left: 10px;
+  user-select: none;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  width: 100%;
+  margin: 0 10px;
+  font-size: 1rem;
+  overflow: hidden;
+}
