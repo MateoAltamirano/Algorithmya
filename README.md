@@ -13,12 +13,12 @@ Algorithmya is a web application powered with amazing features that allows new s
 
 ### Methods Sidebar
 
-Practice and how the main methods from each data structure work!
+Practice how the main methods from each data structure work!
 
 
 ### Data Structure Visualizer
 
-See how the data structure gets build!
+See how the data structures gets built!
 
 ## Contact
 
